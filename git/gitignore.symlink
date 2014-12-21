@@ -9,3 +9,4 @@ doc/tags-ja
 bundle/
 vundle.git/
 tags
+.gems/
