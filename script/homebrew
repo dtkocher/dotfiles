@@ -55,6 +55,8 @@ echo "Don’t forget to add $(brew --prefix coreutils)/libexec/gnubin to \$PATH.
 brew install postgresql
 echo "run 'brew info postgresql' to see postgresql installation instructions. We will try the normal way."
 # Add Postgres to launchctl to let OS X manage the process and start when you login, this will use the default config from /usr/local/etc/redis.conf
+rm -rf /usr/local/var/postgres
+mkdir /usr/local/var/postgres
 initdb /usr/local/var/postgres -E utf8
 mkdir -p ~/Library/LaunchAgents
 ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents/
