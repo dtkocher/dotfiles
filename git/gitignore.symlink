@@ -10,3 +10,4 @@ bundle/
 vundle.git/
 tags
 .gems/
+.gitignore
