@@ -3,6 +3,8 @@ brew cask zap java
 brew cask zap caffeine
 brew cask zap gitx
 brew cask zap anvil
+brew cask zap avast
+brew cask zap heroku-toolbelt
 
 # Uninstall these apps and corresponding files
 brew cask zap iterm2

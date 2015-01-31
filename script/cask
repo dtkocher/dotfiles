@@ -23,6 +23,8 @@ brew cask install gitx
 brew cask install github
 brew cask install spotify
 brew cask install anvil
+brew cask install avast
+brew cask install heroku-toolbelt
 brew cask install alfred
 
 # Link alfred to look at cask folder so these apps
