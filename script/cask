@@ -12,7 +12,7 @@ brew cask install google-hangouts
 brew cask install dropbox
 brew cask install firefox
 brew cask install caffeine
-brew cask install onepassword
+brew cask install 1password
 brew cask install hipchat
 brew cask install nvalt
 brew cask install flux
