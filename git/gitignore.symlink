@@ -11,3 +11,6 @@ vundle.git/
 tags
 .gems/
 .gitignore
+.ruby-gemset
+.ruby-version
+.rbenv-gemsets
