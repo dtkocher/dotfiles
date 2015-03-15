@@ -14,7 +14,7 @@ rbenv rehash
 rbenv install 2.1.5
 rbenv rehash
 
-rbenv install 2.2.0-dev
+rbenv install 2.2.1
 rbenv rehash
 
 rbenv rehash
