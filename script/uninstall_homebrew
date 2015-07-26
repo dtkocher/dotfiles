@@ -21,6 +21,7 @@ brew uninstall macvim
 brew uninstall git
 brew uninstall hub
 brew uninstall coreutils
+brew uninstall dnvm
 
 #unload and remove postgresql
 launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist

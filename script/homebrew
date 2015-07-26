@@ -17,6 +17,9 @@ else
   echo "Cool you have Homebrew time to have some fun now"
 fi
 
+# Add this repo to one that is viewed for update
+brew tap aspnet/dnx
+
 # Make sure we’re using the latest Homebrew
 brew update
 
@@ -70,6 +73,9 @@ brew install redis
 # Add Redis to launchctl to let OS X manage the process and start when you login, this will use the default config from /usr/local/etc/redis.conf
 ln -sfv /usr/local/opt/redis/*.plist ~/Library/LaunchAgents
 launchctl load ~/Library/LaunchAgents/homebrew.mxcl.redis.plist
+
+# Install dot net stuff
+brew install dnvm
 
 # Clean up cached install files
 brew cleanup

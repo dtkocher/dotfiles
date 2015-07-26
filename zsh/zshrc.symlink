@@ -15,8 +15,9 @@ ZSH_THEME="robbyrussell"
 plugins=(brew rails git ruby rbenv heroku zsh_reload sublime github bundler common-aliases rake)
 
 source $ZSH/oh-my-zsh.sh
-source $HOME/.dotfiles/zsh/aliases.zsh
-source $HOME/.dotfiles/zsh/zsh-git-prompt/zshrc.sh
+source dnvm.sh
+source $HOME/Dropbox/home_projects/dotfiles/zsh/aliases.zsh
+source $HOME/Dropbox/home_projects/dotfiles/zsh/zsh-git-prompt/zshrc.sh
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/local/bin:/usr/local/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$(brew --prefix coreutils)/libexec/gnubin"
 

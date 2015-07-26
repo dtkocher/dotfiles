@@ -5,6 +5,7 @@ brew cask zap gitx
 brew cask zap anvil
 brew cask zap avast
 brew cask zap heroku-toolbelt
+brew cask zap visual-studio-code
 
 # Uninstall these apps and corresponding files
 brew cask zap iterm2

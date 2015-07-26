@@ -26,6 +26,7 @@ brew cask install anvil
 brew cask install avast
 brew cask install heroku-toolbelt
 brew cask install alfred
+brew cask install visual-studio-code
 
 # Link alfred to look at cask folder so these apps
 # show when doing a search
