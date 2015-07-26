@@ -4,5 +4,6 @@
 
 . script/uninstall_rbenv
 . script/uninstall_cask
+. script/uninstall_js_packages
 . script/uninstall_homebrew
 . script/uninstall_zshell

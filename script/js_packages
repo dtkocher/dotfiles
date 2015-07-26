@@ -1,0 +1,2 @@
+# install bower
+npm install -g bower

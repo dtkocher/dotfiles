@@ -1,0 +1,2 @@
+# install bower
+npm uninstall -g bower
