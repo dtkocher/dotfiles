@@ -67,6 +67,7 @@ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 echo "Set default user as _postgres with no password"
 createuser -a -d _postgres
 echo "Finally, verify that it’s all working by connecting: psql template1 -U _postgres"
+echo "sudo ARCHFLAGS="-arch x86_64" gem install pg - if having trouble installing pg up"
 
 # Install redis
 brew install redis
