@@ -17,6 +17,7 @@ rbenv rehash
 rbenv install 2.2.2
 rbenv rehash
 
-rbenv rehash
 rbenv install jruby-1.7.16
+rbenv rehash
 
+rbenv gemset create 2.2.2 personal
