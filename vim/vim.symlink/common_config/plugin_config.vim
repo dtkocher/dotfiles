@@ -27,6 +27,9 @@
   Bundle "git://github.com/tpope/vim-abolish.git"
   Bundle "git://github.com/christoomey/vim-tmux-navigator.git"
 
+" Helps detect errors and potential problems in code
+  Bundle "wookiehangover/jshint.vim"
+
 " In line command terminal
   Bundle "git://github.com/oplatek/Conque-Shell.git"
     nmap ctt :ConqueTermTab zsh
