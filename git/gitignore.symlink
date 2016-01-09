@@ -14,3 +14,4 @@ tags
 .ruby-gemset
 .ruby-version
 .rbenv-gemsets
+.nvmrc

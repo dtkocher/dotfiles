@@ -23,7 +23,6 @@
   Bundle "git://github.com/tpope/vim-repeat.git"
   Bundle "git://github.com/vim-scripts/ruby-matchit.git"
   Bundle "git://github.com/wgibbs/vim-irblack.git"
-" Bundle "git://github.com/wavded/vim-stylus.git"
   Bundle "git://github.com/tpope/vim-abolish.git"
   Bundle "git://github.com/christoomey/vim-tmux-navigator.git"
 
@@ -218,19 +217,6 @@
     " = to surround with output erb tag
     let g:surround_61 = "<%= \r %>"
 
-
-" Clojure Highlighting"
-  Bundle "git://github.com/tpope/vim-fireplace.git"
-  Bundle "git://github.com/tpope/vim-classpath.git"
-  Bundle "git://github.com/guns/vim-clojure-static.git"
-  Bundle "git://github.com/vim-scripts/paredit.vim"
-  Bundle "git://github.com/amdt/vim-niji.git"
-  autocmd BufNewFile,BufRead *.clj set filetype=clojure
-  autocmd BufNewFile,BufRead *.edn set filetype=clojure
-
-  let g:paredit_leader= '\'
-
-
 " Jade Highlighting"
   Bundle "git://github.com/digitaltoad/vim-jade.git"
   autocmd BufNewFile,BufRead *.jade set filetype=jade
@@ -243,3 +229,6 @@
   Bundle "git://github.com/elixir-lang/vim-elixir.git"
     au BufNewFile,BufRead *.ex set filetype=elixir
     au BufNewFile,BufRead *.exs set filetype=elixir
+
+  Bundle "git://github.com/leafgarland/typescript-vim.git"
+  autocmd BufRead,BufNewFile *.ts set filetype=typescript

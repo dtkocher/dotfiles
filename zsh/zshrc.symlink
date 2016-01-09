@@ -12,16 +12,19 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(brew rails git ruby rbenv heroku zsh_reload sublime github bundler common-aliases rake)
+plugins=(brew rails git ruby rbenv heroku zsh_reload sublime bundler common-aliases rake)
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/Dropbox/home_projects/dotfiles/zsh/aliases.zsh
 source $HOME/Dropbox/home_projects/dotfiles/zsh/zsh-git-prompt/zshrc.sh
 source $HOME/.work.zsh
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/local/bin:/usr/local/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$(brew --prefix coreutils)/libexec/gnubin"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/local/bin:/usr/local/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"
 
 setopt PROMPT_SUBST
 PROMPT='%{$(pwd|grep --color=always /)%${#PWD}G%} %(!.%F{red}.%F{cyan})%n%f $(git_super_status) '
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+export NVM_DIR="/Users/dustinkocher/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
