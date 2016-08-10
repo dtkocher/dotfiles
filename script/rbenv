@@ -8,16 +8,10 @@ rbenv install 1.9.3-p547
 rbenv global 1.9.3-p547
 rbenv rehash
 
-rbenv install 2.0.0-p576
-rbenv rehash
-
-rbenv install 2.1.5
-rbenv rehash
-
-rbenv install 2.2.2
+rbenv install 2.3.1
 rbenv rehash
 
 rbenv install jruby-1.7.16
 rbenv rehash
 
-rbenv gemset create 2.2.2 personal
+rbenv gemset create 2.3.1 personal
