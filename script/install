@@ -7,5 +7,6 @@
 . script/cask
 . script/js_packages
 . script/rbenv
+. script/nvmrc
 . script/zshell
 . osx/set-defaults.sh

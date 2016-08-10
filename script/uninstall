@@ -3,6 +3,7 @@
 # uninstalls things.
 
 . script/uninstall_rbenv
+. script/uninstall_nvmrc
 . script/uninstall_cask
 . script/uninstall_js_packages
 . script/uninstall_homebrew
