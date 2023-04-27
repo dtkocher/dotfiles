@@ -3,38 +3,21 @@
 brew install caskroom/cask/brew-cask
 
 # Install desired apps
-brew cask install java
-brew cask install iterm2
-brew cask install ccleaner
-brew cask install google-chrome
-brew cask install google-drive
-brew cask install google-hangouts
-brew cask install dropbox
-brew cask install firefox
-brew cask install caffeine
-brew cask install 1password
-brew cask install hipchat
-brew cask install nvalt
-brew cask install flux
-brew cask install openoffice
-brew cask install virtualbox
-brew cask install sublime-text
-brew cask install gitx
-brew cask install github
-brew cask install spotify
-brew cask install anvil
-brew cask install avast
-brew cask install heroku-toolbelt
-brew cask install alfred
-brew cask install visual-studio-code
-brew cask install psequel
+brew install java
+brew install iterm2
+brew install ccleaner
+brew install dropbox
+brew install 1password
+brew install nvalt
+brew install openoffice
+brew install virtualbox
+brew install gitx
+brew install github
+brew install avast
+brew install heroku-toolbelt
+brew install visual-studio-code
+brew install psequel
 
-# Link alfred to look at cask folder so these apps
-# show when doing a search
-open ~/Applications/Alfred\ Preferences.app/
-brew cask alfred link
 
 # Clean up cached install files
-brew cask cleanup
 brew cleanup
-
