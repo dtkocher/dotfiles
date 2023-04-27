@@ -12,7 +12,6 @@ brew install github
 brew install avast
 brew install heroku-toolbelt
 brew install visual-studio-code
-brew install psequel
 
 
 # Clean up cached install files
