@@ -1,6 +1,5 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
-export RBENV_ROOT=/usr/local/var/rbenv
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -12,12 +11,11 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(brew rails git ruby rbenv heroku zsh_reload sublime bundler common-aliases rake)
+plugins=(brew rails git ruby rbenv heroku zsh_reload bundler common-aliases rake)
 
 source $ZSH/oh-my-zsh.sh
-source $HOME/Dropbox/home_projects/dotfiles/zsh/aliases.zsh
-source $HOME/Dropbox/home_projects/dotfiles/zsh/zsh-git-prompt/zshrc.sh
-source $HOME/.work.zsh
+source $HOME/Personal/dotfiles/zsh/aliases.zsh
+source $HOME/Personal/dotfiles/zsh/zsh-git-prompt/zshrc.sh
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/local/bin:/usr/local/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"
 
