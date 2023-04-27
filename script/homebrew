@@ -11,7 +11,13 @@ then
   echo "Install XCode Command Line Tools:"
   xcode-select --install
   echo "Install Homebrew"
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  export HOMEBREW_NO_INSTALL_FROM_API=1
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+  cd /opt/homebrew/bin/
+  PATH=$PATH:/opt/homebrew/bin
+  cd
+  touch .zshrc
+  echo export PATH=$PATH:/opt/homebrew/bin >> .zshrc
   echo "Now you have Homebrew and are ready to rock and roll."
 else
   echo "Cool you have Homebrew time to have some fun now"
