@@ -1,2 +1,5 @@
 # install bower
-npm install -g bower
+brew install direnv
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.36.0/install.sh | bash
+
+nvm install 16
