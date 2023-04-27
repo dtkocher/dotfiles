@@ -1,7 +1,3 @@
-# Install brew-cask will allow you to install several apps not
-# provided by the app store
-brew install caskroom/cask/brew-cask
-
 # Install desired apps
 brew install java
 brew install iterm2
