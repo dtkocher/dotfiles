@@ -4,7 +4,7 @@ require 'fileutils'
 def git_clone(repo, target)
   path = translate_path(target)
   puts path
-  FileUtils.rm_rf(path) if File.exists?(path)
+  FileUtils.rm_rf(path) if File.exist?(path)
   `git clone ""#{repo}"" "#{target}"`
 end
 
@@ -43,9 +43,9 @@ task :install_symlinks do
     file = linkable.split('/').last.split('.symlink').last
     target = "#{ENV["HOME"]}/.#{file}"
 
-    if File.exists?(target) || File.symlink?(target)
+    if File.exist?(target) || File.symlink?(target)
       unless skip_all || overwrite_all || backup_all
-        puts "File already exists: #{target}, what do you want to do? [s]kip, [S]kip all, [o]verwrite, [O]verwrite all, [b]ackup, [B]ackup all"
+        puts "File already exist: #{target}, what do you want to do? [s]kip, [S]kip all, [o]verwrite, [O]verwrite all, [b]ackup, [B]ackup all"
         case STDIN.gets.chomp
         when 'o' then overwrite = true
         when 'b' then backup = true
@@ -88,9 +88,9 @@ task :install_configs do
 
     target = "#{target_directory.strip}/#{file}"
 
-    if File.exists?(target) || File.symlink?(target)
+    if File.exist?(target) || File.symlink?(target)
       unless skip_all || overwrite_all || backup_all
-        puts "File already exists: #{target}, what do you want to do? [s]kip, [S]kip all, [o]verwrite, [O]verwrite all, [b]ackup, [B]ackup all"
+        puts "File already exist: #{target}, what do you want to do? [s]kip, [S]kip all, [o]verwrite, [O]verwrite all, [b]ackup, [B]ackup all"
         case STDIN.gets.chomp
         when 'o' then overwrite = true
         when 'b' then backup = true
@@ -144,7 +144,7 @@ task :uninstall_symlinks do
     end
 
     # Replace any backups made during installation
-    if File.exists?("#{ENV["HOME"]}/.#{file}.backup")
+    if File.exist?("#{ENV["HOME"]}/.#{file}.backup")
       `mv "$HOME/.#{file}.backup" "$HOME/.#{file}"`
     end
   end
