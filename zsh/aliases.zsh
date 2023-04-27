@@ -26,5 +26,5 @@ alias duo='du -sh $(du -s * | sort -k1n | ruby -nae '\''puts '\$'F[1..-1].join("
 alias zshrc="vi ~/.zshrc"
 alias la='ls -al'
 alias vimconfig='vi ~/.vim/common_config/key_mappings.vim'
-alias personal='cd ~/Dropbox/home_projects/'
+alias personal='cd ~/Personal/'
 
